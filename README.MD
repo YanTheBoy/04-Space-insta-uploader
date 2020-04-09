@@ -14,12 +14,12 @@ INSTA_LOGIN=your_login
 INSTA_PASS=your_instagram_password
 ```
 Download photos from SpaceX API or Hubble API. Scripts will download photos and put them in new Image directory.
-```python
+```bash
 $ python3 fetch_hubble.py
 $ python3 fetch_spacex.py
 ```
 Run insta-uploader.py for cropping images and uploading in instagram
-```python
+```bash
 $ python3 insta-uploader.py
 2020-04-09 23:46:11,532 - INFO - Instabot version: 0.117.0 Started
 2020-04-09 23:46:11,533 - INFO - Recovery from /home/elijah/Documents/projects/04-insta-uploader/...
