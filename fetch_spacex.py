@@ -9,7 +9,6 @@ def get_spacex_last_launch_pictures_links(url):
 
 def fetch_spacex_last_launch_photo(url, download_folder):
     os.chdir(download_folder)
-    # filename = url.split('/')[-1]
     filename = url.split('/')[-1].split('.')[0]
     response = requests.get(url)
 
