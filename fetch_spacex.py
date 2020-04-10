@@ -22,6 +22,6 @@ if __name__ == '__main__':
     os.makedirs(image_folder, exist_ok=True)
 
     spacex_last_launch_url = 'https://api.spacexdata.com/v3/launches/latest'
-    list_spacex_pics = get_spacex_last_launch_pictures_links(spacex_last_launch_url)
-    for link in list_spacex_pics:
+    spacex_pics = get_spacex_last_launch_pictures_links(spacex_last_launch_url)
+    for link in spacex_pics:
         fetch_spacex_last_launch_photo(link, image_folder)
